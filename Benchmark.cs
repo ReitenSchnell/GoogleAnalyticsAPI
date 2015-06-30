@@ -12,7 +12,7 @@ namespace GAEvents
         {
             var st = new Stopwatch();
             st.Start();
-            Enumerable.Range(0, 400).ToList().ForEach(i =>
+            Enumerable.Range(0, 100).ToList().ForEach(i =>
             {
                 GoogleAnalyticsApi.TrackEvent("Advertisement", "Perf", Guid.NewGuid().ToString());
             });
